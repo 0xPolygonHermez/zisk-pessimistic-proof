@@ -1,0 +1,24 @@
+[workspace]
+members = [
+    "bin/input-gen"
+]
+exclude = []
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+agglayer-primitives = { git = "https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark.git", rev = "3023c67f30c3430d493fa0e671073552573f047e"}
+agglayer-types = { git = "https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark.git", rev = "3023c67f30c3430d493fa0e671073552573f047e"}
+pessimistic-proof = { git = "https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark.git", rev = "3023c67f30c3430d493fa0e671073552573f047e"}
+pessimistic-proof-core = { git = "https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark.git", rev = "3023c67f30c3430d493fa0e671073552573f047e"}
+pessimistic-proof-test-suite = { git = "https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark.git", rev = "3023c67f30c3430d493fa0e671073552573f047e"}
+
+bincode = "1.3.3"
+clap = { version = "4.5.23", features = ["derive", "env"] }
+dotenv = "0.15.0"
+serde = { version = "1.0.216", features = ["derive"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }

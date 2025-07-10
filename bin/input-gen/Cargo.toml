@@ -1,0 +1,22 @@
+[package]
+name = "pp-input-gen"
+version.workspace = true
+edition.workspace = true
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[dependencies]
+agglayer-types.workspace = true
+pessimistic-proof.workspace = true
+pessimistic-proof-core.workspace = true
+pessimistic-proof-test-suite.workspace = true
+
+bincode.workspace = true
+clap.workspace = true
+dotenv.workspace = true
+serde.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

@@ -1,0 +1,22 @@
+[package]
+name = "pp-client"
+version = "0.1.0"
+edition = "2024"
+
+[workspace.package]
+
+[dependencies]
+bincode = "1.3.3"
+pessimistic-proof-core = { git = "https://github.com/BrianSeong99/Agglayer_PessimisticProof_Benchmark.git", rev = "3023c67f30c3430d493fa0e671073552573f047e"}
+serde = { version = "1.0.216", features = ["derive"] }
+ziskos = { git = "https://github.com/0xPolygonHermez/zisk.git", branch = "pre-develop-0.9.0"}
+# ziskos = { path = "../../..//zisk" }
+
+[patch.crates-io]
+tiny-keccak = { git = "https://github.com/0xPolygonHermez/zisk-patch-tiny-keccak.git", branch = "zisk" }
+k256 = { git = "https://github.com/0xPolygonHermez/zisk-patch-elliptic-curves.git", branch = "zisk-patch-k256/v0.13.4" }
+# Local development
+# tiny-keccak = { path = "../../../zisk-patch-tiny-keccak" }
+# k256 = { path = "../../../zisk-patch-elliptic-curves/k256" }
+
+
