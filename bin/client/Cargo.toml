@@ -12,4 +12,7 @@ serde = { version = "1.0.216", features = ["derive"] }
 ziskos = { git = "https://github.com/0xPolygonHermez/zisk.git", branch = "pre-develop-0.9.0"}
 # ziskos = { path = "../../..//zisk" }
 
+[patch.crates-io]
+tiny-keccak = { git = "https://github.com/0xPolygonHermez/zisk-patch-tiny-keccak.git", branch = "zisk" }
+
 
