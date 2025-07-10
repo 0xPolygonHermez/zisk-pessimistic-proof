@@ -30,7 +30,7 @@ ziskemu -e target/riscv64ima-zisk-zkvm-elf/release/pp-client -i ../../inputs/pp_
 
 ## Generate Input Block Files
 
-To generate additional input files, you can use the `pp-input-gen` tool. For example, to generate an input file for 50 bridge exists and 50 imported bridge exits , run:
+To generate additional input files, you can use the `pp-input-gen` tool. For example, to generate an input file for 50 bridge exists and 50 imported bridge exits, run:
 
 ```bash
 cargo run --release --bin=pp-input-gen -- -e 50 -i 50
