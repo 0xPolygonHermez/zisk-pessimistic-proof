@@ -14,5 +14,9 @@ ziskos = { git = "https://github.com/0xPolygonHermez/zisk.git", branch = "pre-de
 
 [patch.crates-io]
 tiny-keccak = { git = "https://github.com/0xPolygonHermez/zisk-patch-tiny-keccak.git", branch = "zisk" }
+k256 = { git = "https://github.com/0xPolygonHermez/zisk-patch-elliptic-curves.git", branch = "zisk-patch-k256/v0.13.4" }
+# Local development
+# tiny-keccak = { path = "../../../zisk-patch-tiny-keccak" }
+# k256 = { path = "../../../zisk-patch-elliptic-curves/k256" }
 
 
